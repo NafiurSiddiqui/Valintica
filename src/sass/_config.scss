@@ -1,0 +1,46 @@
+//test-----
+@mixin border($color) {
+	border: 1px solid $color;
+}
+
+//---------
+
+@mixin flex($directionJC, $directionAT, $flexType) {
+	display: flex;
+	justify-content: $directionJC;
+	align-items: $directionAT;
+	flex-direction: $flexType;
+}
+
+@mixin media-small-md {
+	@media screen and (min-width: 450px) {
+		@content;
+	}
+}
+
+@mixin media-small-lg {
+	@media screen and (min-width: 600px) {
+		@content;
+	}
+}
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin media-xxl {
+	@media screen and (min-width: 2200px) {
+		@content;
+	}
+}

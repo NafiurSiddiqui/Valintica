@@ -1,18 +1,23 @@
 import React from 'react';
 import HomeImage from '../../assets/home_image.png';
-import Button from '../../utilities/Button';
+import Button from '../UI/Button';
+import { Link } from 'react-router-dom';
+import Box from '../UI/Box';
+
 export default function Welcome() {
 	return (
-		<section>
+		<Box>
 			<img src={HomeImage} alt="A necklace" />
-			<div className="home-greetings">
-				<h1 className="home-greetings-heading">Welcome</h1>
-				<p className="home-greetings-paragraph">
+			<article className="common-content">
+				<h1 className="common-content-heading ">Welcome</h1>
+				<p className="common-content-paragraph">
 					We're glad you are here! Sign up to start
 				</p>
 
-				<Button type={'button'}>Get Started</Button>
-			</div>
-		</section>
+				<Button type={'button'}>
+					<Link to={'createAccount'}>Get Started</Link>
+				</Button>
+			</article>
+		</Box>
 	);
 }
