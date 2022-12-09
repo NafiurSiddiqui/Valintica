@@ -13,34 +13,34 @@
 }
 
 @mixin media-small-md {
-	@media screen and (min-width: 450px) {
+	@media screen and (max-width: 450px) {
 		@content;
 	}
 }
 
 @mixin media-small-lg {
-	@media screen and (min-width: 600px) {
+	@media screen and (max-width: 600px) {
 		@content;
 	}
 }
 @mixin media-md {
-	@media screen and (min-width: 768px) {
+	@media screen and (max-width: 768px) {
 		@content;
 	}
 }
 @mixin media-lg {
-	@media screen and (min-width: 1024px) {
+	@media screen and (max-width: 1060px) {
 		@content;
 	}
 }
 @mixin media-xl {
-	@media screen and (min-width: 1600px) {
+	@media screen and (max-width: 1600px) {
 		@content;
 	}
 }
 
 @mixin media-xxl {
-	@media screen and (min-width: 2200px) {
+	@media screen and (max-width: 2200px) {
 		@content;
 	}
 }

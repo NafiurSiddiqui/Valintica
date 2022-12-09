@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Button({ type, children }) {
 	return (
-		<button type={type} className="Btn">
+		<button type={type} className="btn">
 			{children}
 		</button>
 	);

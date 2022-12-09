@@ -1,0 +1,15 @@
+@include media-lg {
+	.floating-box {
+		padding: 3vw !important;
+	}
+	.common-content {
+		line-height: 4.3rem !important;
+		&-heading {
+			font-size: 5vw !important;
+		}
+
+		&-paragraph {
+			font-size: 2vw !important;
+		}
+	}
+}
