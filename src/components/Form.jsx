@@ -8,12 +8,14 @@ export default function Form() {
 	const submitHandler = () => {};
 	return (
 		<>
-			<h1>Create Account</h1>
-
-			<form action="#" onSubmit={submitHandler}>
+			<form action="#" onSubmit={submitHandler} className="form">
 				<label htmlFor="username">
-					<span>
-						<img src={userIcon} alt="user icon" />
+					<span className="form__image-container">
+						<img
+							src={userIcon}
+							alt="user icon"
+							className="form__image-container__image"
+						/>
 					</span>
 					<input
 						type="text"
@@ -23,14 +25,22 @@ export default function Form() {
 					/>
 				</label>
 				<label htmlFor="email">
-					<span>
-						<img src={mailIcon} alt="user icon" />
+					<span className="form__image-container">
+						<img
+							src={mailIcon}
+							alt="user icon"
+							className="form__image-container__image"
+						/>
 					</span>
 					<input type="email" name="email" id="email" placeholder="Email" />
 				</label>
 				<label htmlFor="password">
-					<span>
-						<img src={lockIcon} alt="user icon" />
+					<span className="form__image-container">
+						<img
+							src={lockIcon}
+							alt="user icon"
+							className="form__image-container__image"
+						/>
 					</span>
 					<input
 						type="password"
@@ -40,8 +50,12 @@ export default function Form() {
 					/>
 				</label>
 				<label htmlFor="confirmpassword">
-					<span>
-						<img src={lockIcon} alt="user icon" />
+					<span className="form__image-container">
+						<img
+							src={lockIcon}
+							alt="user icon"
+							className="form__image-container__image"
+						/>
 					</span>
 					<input
 						type="password"

@@ -7,7 +7,7 @@ import Box from '../UI/Box';
 export default function Welcome() {
 	return (
 		<Box>
-			<div className="home image-container">
+			<div className="image-container">
 				<img src={HomeImage} alt="A necklace" />
 			</div>
 			<article className="common-content">
@@ -16,7 +16,7 @@ export default function Welcome() {
 					We're glad you are here! Sign up to start
 				</p>
 
-				<Link to={'createAccount'}>
+				<Link to={'sign-in'}>
 					<Button type={'button'}>Get Started</Button>
 				</Link>
 			</article>

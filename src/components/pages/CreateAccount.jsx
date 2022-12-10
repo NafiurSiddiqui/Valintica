@@ -6,14 +6,17 @@ import Box from '../UI/Box';
 export default function CreateAccount() {
 	return (
 		<Box>
-			<img src={formImage} alt="A necklace" />
-			<article className="common-content">
-				<h1 className="common-content-heading ">Welcome</h1>
-				<p className="common-content-paragraph">
-					We're glad you are here! Sign up to start
+			<div className="image-container">
+				<img src={formImage} alt="A necklace" />
+			</div>
+
+			<article className="common-content form-content">
+				<h1 className="common-content-heading form-heading">Create Account </h1>
+				<p className="common-content-paragraph form-paragraph">
+					Go ahead and sign up, let everyone know how awesome you are!
 				</p>
+				<Form />
 			</article>
-			<Form />
 		</Box>
 	);
 }

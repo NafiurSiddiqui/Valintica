@@ -1,0 +1,23 @@
+.form {
+	@include border(black);
+	@include flex(center, center, column);
+	&__image-container {
+		width: 2rem;
+		display: inline-block;
+		&__image {
+			width: 100%;
+		}
+	}
+
+	&-content {
+		width: 28.7rem;
+	}
+
+	&-heading {
+		font-size: 2.625rem !important;
+	}
+
+	&-paragraph {
+		line-height: 2.2rem;
+	}
+}
