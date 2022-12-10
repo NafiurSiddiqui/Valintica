@@ -11,8 +11,8 @@ export default function Welcome() {
 				<img src={HomeImage} alt="A necklace" />
 			</div>
 			<article className="common-content">
-				<h1 className="common-content-heading ">Welcome</h1>
-				<p className="common-content-paragraph">
+				<h1 className="common-content-heading home-heading ">Welcome</h1>
+				<p className="common-content-paragraph home-paragraph">
 					We're glad you are here! Sign up to start
 				</p>
 

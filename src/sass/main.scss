@@ -49,6 +49,7 @@ div#root {
 }
 .image-container {
 	width: 45%;
+	margin-right: 0.6rem;
 }
 
 img {
@@ -58,7 +59,7 @@ img {
 .common-content {
 	line-height: 5rem;
 	&-heading {
-		font-size: 3.5rem;
+		// font-size: 3.5rem;
 		color: #2d2d2d;
 	}
 
@@ -66,6 +67,18 @@ img {
 		font-size: 1.5rem;
 		color: #1f1249;
 	}
+}
+
+.home-heading {
+	font-size: 3.5rem;
+}
+
+.home-paragraph {
+	margin-bottom: 2rem;
+}
+
+.success-content {
+	width: 40%;
 }
 
 .btn {

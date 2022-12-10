@@ -1,20 +1,48 @@
 .form {
-	@include border(black);
-	@include flex(center, center, column);
+	@include flex(space-between, center, column);
 	&__image-container {
-		width: 2rem;
+		width: 1.25rem;
+		height: 100%;
 		display: inline-block;
+
 		&__image {
 			width: 100%;
+			position: relative;
+			bottom: -0.3rem;
+		}
+	}
+	label {
+		@include border(orange);
+		width: 100%;
+		background-color: white;
+		border: 1px solid #dbe3ff;
+		border-radius: 0.625rem;
+		line-height: 3rem;
+		margin: 0.6rem;
+		padding: 0 1rem;
+		&:last-of-type {
+			margin-bottom: 2rem;
 		}
 	}
 
+	input {
+		border: none;
+		width: 90%;
+		border-left: 1px solid #dbe3ff;
+		margin-left: 1rem;
+		padding-left: 1rem;
+		height: 1.3rem;
+
+		&:focus {
+			outline: none;
+		}
+	}
 	&-content {
 		width: 28.7rem;
 	}
 
 	&-heading {
-		font-size: 2.625rem !important;
+		font-size: 2.625rem;
 	}
 
 	&-paragraph {

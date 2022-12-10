@@ -18,14 +18,27 @@
 	}
 }
 
-@mixin media-small-lg {
-	@media screen and (max-width: 600px) {
-		@content;
+@mixin media-small-lg($custom: false) {
+	@if $custom {
+		@media screen and (max-width: $custom) {
+			@content;
+		}
+	} @else {
+		@media screen and (max-width: 600px) {
+			@content;
+		}
 	}
 }
-@mixin media-md {
-	@media screen and (max-width: 768px) {
-		@content;
+
+@mixin media-md($custom: false) {
+	@if $custom {
+		@media screen and (max-width: $custom) {
+			@content;
+		}
+	} @else {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
 	}
 }
 @mixin media-lg {
